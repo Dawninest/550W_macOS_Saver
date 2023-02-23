@@ -11,6 +11,7 @@
 		C59BA76029A4FF300038D223 /* mossSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BA75F29A4FF300038D223 /* mossSaverView.m */; };
 		C59BA76B29A501F00038D223 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C59BA76A29A501F00038D223 /* Info.plist */; };
 		C59BA79529A50A670038D223 /* Rajdhani Medium.otf in CopyFiles */ = {isa = PBXBuildFile; fileRef = C59BA79429A50A670038D223 /* Rajdhani Medium.otf */; };
+		C5E39C1D29A7ABB200A4AAFD /* 550W.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C5E39C1C29A7ABB200A4AAFD /* 550W.bmp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		C59BA75F29A4FF300038D223 /* mossSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mossSaverView.m; sourceTree = "<group>"; };
 		C59BA76A29A501F00038D223 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59BA79429A50A670038D223 /* Rajdhani Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rajdhani Medium.otf"; path = "font/Rajdhani Medium.otf"; sourceTree = "<group>"; };
+		C5E39C1C29A7ABB200A4AAFD /* 550W.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = 550W.bmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C59BA76A29A501F00038D223 /* Info.plist */,
+				C5E39C1C29A7ABB200A4AAFD /* 550W.bmp */,
 				C59BA75D29A4FF300038D223 /* mossSaverView.h */,
 				C59BA75F29A4FF300038D223 /* mossSaverView.m */,
 			);
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E39C1D29A7ABB200A4AAFD /* 550W.bmp in Resources */,
 				C59BA76B29A501F00038D223 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

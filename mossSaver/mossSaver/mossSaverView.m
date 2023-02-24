@@ -77,7 +77,8 @@
         }
     }
     if (needAdd) {
-        NSArray *pathArr = [[NSBundle mainBundle] pathsForResourcesOfType: @"otf" inDirectory: @"font"];
+        NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.yibo.mossSaver"];
+        NSArray *pathArr = [bundle pathsForResourcesOfType: @"otf" inDirectory: @"font"];
         for (int i = 0; i < pathArr.count; i ++) {
             NSURL *fontURL = [NSURL fileURLWithPath:pathArr[i]];
             NSURL *urls[] = {fontURL};
@@ -117,17 +118,19 @@
     
     [self addSubview: bgImage];
     
-//    NSTextField *tipTitle = [[NSTextField alloc]init];
-//    tipTitle.frame = CGRectMake(width * 0.05, height * 0.618 + 10, width * 0.9, 30);
-//    tipTitle.editable = NO;
-//    tipTitle.bordered = NO;
-//    tipTitle.drawsBackground = NO;
-//    tipTitle.font = [NSFont fontWithName:@"Rajdhani" size:30];
-//    tipTitle.textColor = jikeY;
-//    tipTitle.alignment = NSTextAlignmentCenter;
-//    tipTitle.stringValue = imagePath;//[NSString stringWithFormat:@"%f,%f", width, height];
-//    [self addSubview:tipTitle];
-//
+    
+    
+    NSTextField *tipTitle = [[NSTextField alloc]init];
+    tipTitle.frame = CGRectMake(width * 0.05, height * 0.618 + 10, width * 0.9, 30);
+    tipTitle.editable = NO;
+    tipTitle.bordered = NO;
+    tipTitle.drawsBackground = NO;
+    tipTitle.font = [NSFont fontWithName:@"Rajdhani" size:30];
+    tipTitle.textColor = jikeY;
+    tipTitle.alignment = NSTextAlignmentCenter;
+//    tipTitle.stringValue = [NSString stringWithFormat:@"%f,%f", width, height];
+    [self addSubview:tipTitle];
+
     
     
     self.dateNumText = [[NSView alloc] init];
@@ -138,7 +141,7 @@
     CGFloat leftPadding = (height - 720) / 2;
 
     self.dateNum_h = [[NSTextField alloc] init];
-    self.dateNum_h.frame = CGRectMake(leftPadding, 0, 310, 300);
+    self.dateNum_h.frame = CGRectMake(leftPadding - 30, 0, 350, 300);
     self.dateNum_h.editable = NO;
     self.dateNum_h.bordered = NO;
     self.dateNum_h.drawsBackground = NO;
